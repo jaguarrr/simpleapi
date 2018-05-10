@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  DBHOST: <INSERT_DB_IP_OR_HOST>
+  DBNAME: <INSERT_DB_NAME>
+  DBUSER: <INSERT_DB_USER>
+kind: ConfigMap
+metadata:
+  name: simpleapi-configs
+  namespace: default
+
