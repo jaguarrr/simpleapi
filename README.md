@@ -42,8 +42,10 @@ The app is written in Python, using Flask framework
 
 Download/pull this repository:
 `git clone https://github.com/jaguarrr/simpleapi.git`
+
 Go to the newly created directory
 `cd simpleapi`
+
 Build and tag your docker image
 
     $ docker build . -t jaguar/simpleapi
