@@ -8,6 +8,8 @@
 # this script will update the deployment config file
 # with the new version and apply the changes to the
 # kubernetes cluster.
+# Kubernetes deployment will handle the rollout without 
+# any downtime.
 #####
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
