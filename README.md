@@ -4,12 +4,19 @@ This repo contains files needed to create a Hello World API, using Python and Fl
 # API functionality
 
 Description: Saves/updates the given user's name and date of birth in the database.
+
 Request:       `PUT /hello/John { "dateOfBirth": "2000-01-01" }`
+
 Response:    `201 No Content`
 
+
+
 Description: Returns a hello/birthday message for the given user
+
 Request:       `GET /hello/John`
+
 Response:     `200 OK`
+
 
  1. when John's birthday is in 5 days:
                       `{ "message": "Hello, John! Your birthday is in 5 days" }`
@@ -25,10 +32,10 @@ The app is written in Python, using Flask framework
  - `requirements.txt` are the dependencies required to run the app
  - `Dockerfile` is used to build docker container
  - `k8syamls` is the folder containing required yaml files to deploy to kubernetes cluster
-		 - `deployment.yaml` - will create a deployment of 6 containers
-		 - `configmap.yaml` - will create environment variables needed by the application to run. ***make sure to fill these ones***
-		 - `secrets.yaml` - will create environment variable containing db password, ***make sure to fill this one too***
-		 - `service.yaml` - will create a service type LoadBalancer, exposing the application on a public IP
+    - `deployment.yaml` - will create a deployment of 6 containers	 
+    - `configmap.yaml` - will create environment variables needed by the application to run. ***make sure to fill these ones***
+    - `secrets.yaml` - will create environment variable containing db password, ***make sure to fill this one too***
+    - `service.yaml` - will create a service type LoadBalancer, exposing the application on a public IP
 
 ### Deployment steps
 **I have tested this on Google Kubernetes Engine**
