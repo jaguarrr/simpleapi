@@ -52,7 +52,7 @@ spec:
             port: 5000
           initialDelaySeconds: 10
           periodSeconds: 10
-        image: jaguar/simpleapi
+        image: jaguar/simpleapi:01
         imagePullPolicy: Always
         name: simpleapi
       dnsPolicy: ClusterFirst
